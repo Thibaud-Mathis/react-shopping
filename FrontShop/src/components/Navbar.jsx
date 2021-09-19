@@ -5,7 +5,9 @@ import ShoppingCart from '@material-ui/icons/ShoppingCartOutlined'
 import Badge from '@material-ui/core/Badge'
 
 const Container = styled.div`
-    height: 60px;
+    height: 40px;
+    /* background: transparents; */
+    padding-bottom: 50px;
 `
 const Wrapper = styled.div`
     padding: 5px 25px;
@@ -60,34 +62,32 @@ const Logo = styled.h1`
 
 const Navbar = () => {
     return (
-        <div>
-            <Container>
-                <Wrapper>
-                    <Left>
-                        <Language>EN</Language>
-                        <SearchContainer>
-                            <Search style={{color: "gray", fontSize: 16}}/>
-                            <Input/>
-                        </SearchContainer>
-                    </Left>
-                    <Center>
-                        <Logo>LOCOS</Logo>
-                    </Center>
-                    <Right>
-                        <MenuItem>REGISTER</MenuItem>
-                        <MenuItem>SIGN IN</MenuItem>
-                        <MenuItem>
-                            <Badge badgeContent={4} color="secondary">
-                                <ShoppingCart/>
-                            </Badge>
-                        </MenuItem>
-                    </Right>
+        <Container>
+            <Wrapper>
+                <Left>
+                    <Language>EN</Language>
+                    <SearchContainer>
+                        <Search style={{color: "gray", fontSize: 16}}/>
+                        <Input/>
+                    </SearchContainer>
+                </Left>
+                <Center>
+                    <Logo>LOCOS</Logo>
+                </Center>
+                <Right>
+                    <MenuItem>REGISTER</MenuItem>
+                    <MenuItem>SIGN IN</MenuItem>
+                    <MenuItem>
+                        <Badge badgeContent={4} color="secondary">
+                            <ShoppingCart/>
+                        </Badge>
+                    </MenuItem>
+                </Right>
 
-                    
-                </Wrapper>
                 
-            </Container>
-        </div>
+            </Wrapper>
+            
+        </Container>
     )
 }
 
