@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Navbar from '../components/Navbar'
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
+import { mobile } from '../responsive'
 
 const Container = styled.div`
     width: 100vw;
@@ -22,6 +23,7 @@ const Wrapper = styled.div`
     padding: 20px;
     width: 40%;
     background-color: white;
+    ${mobile({width: "75%"}) }
 `
 const Title = styled.h1`
     font-size: 24px;
