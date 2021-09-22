@@ -2,13 +2,13 @@ import React, { useState } from 'react'
 import './App.css'
 import Home from "./pages/Home"
 import ProductList from './pages/ProductList'
+import Product from './pages/Product'
+import Login from './pages/Login'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <ProductList/>
+      <Login/>
     </div>
   )
 }

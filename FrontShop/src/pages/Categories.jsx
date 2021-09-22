@@ -20,6 +20,11 @@ const Filter = styled.div`
     margin: 20px;
 `
 
+const FilterText = styled.span`
+    font-size: 20px;
+    font-weight: 600;
+`
+
 // const Products = styled.div``
 
 const Categories = () => {
@@ -27,10 +32,10 @@ const Categories = () => {
         <Container>
             <Annoucement/>
             <Navbar/>
-            <Title>Dresses</Title>
+            <Title>hop</Title>
             <FilterContainer>
-                <Filter>filter1</Filter>
-                <Filter>filter2</Filter>
+                <Filter><FilterText>filter1</FilterText></Filter>
+                <Filter><FilterText>filter1</FilterText></Filter>
             </FilterContainer>
             <Products/>
             <Newsletter/>
